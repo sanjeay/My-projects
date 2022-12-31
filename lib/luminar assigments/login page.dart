@@ -85,18 +85,19 @@ class _loginnState extends State<loginn> {
                   }
                 },
                 decoration: InputDecoration(
-                    suffixIcon: IconButton(onPressed: () {
-                      setState(() {
-                        if(showpass){
-                          showpass == false;
-                        }else{
-                          showpass == true;
-                        }
-                      });
-                    },
-                        icon: (showpass == true) ?
-                        Icon(Icons.visibility_off)
-                        :Icon(Icons.visibility)),
+                    suffixIcon: IconButton(
+                        onPressed: () {
+                          setState(() {
+                            if (showpass) {
+                              showpass == false;
+                            } else {
+                              showpass == true;
+                            }
+                          });
+                        },
+                        icon: (showpass == true)
+                            ? Icon(Icons.visibility_off)
+                            : Icon(Icons.visibility)),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5))),
               ),
