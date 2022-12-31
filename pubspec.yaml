@@ -33,6 +33,9 @@ dependencies:
     sdk: flutter
   fluttertoast: ^8.1.2
   two_letter_icon: ^0.0.1
+  flutter_staggered_grid_view: ^0.6.2
+  staggered_grid_view_flutter: ^0.0.4
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
