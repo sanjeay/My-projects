@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
     home: facebook(),
   ));
@@ -11,6 +11,8 @@ class facebook extends StatelessWidget {
   final double coverHeight = 280;
   final double profileHeight = 144;
 
+  const facebook({super.key});
+
   @override
   Widget build(BuildContext context) {
     final top = coverHeight - profileHeight / 2;
@@ -18,12 +20,12 @@ class facebook extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.menu),
+        leading: const Icon(Icons.menu),
         centerTitle: true,
-        title: Text("profile"),
-        actions: [
+        title: const Text("profile"),
+        actions: const [
           Padding(
-            padding: const EdgeInsets.only(right: 5),
+            padding: EdgeInsets.only(right: 5),
             child: Icon(Icons.search),
           )
         ],
@@ -53,16 +55,16 @@ class facebook extends StatelessWidget {
             )
           ],
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 40),
+        const Padding(
+          padding: EdgeInsets.only(top: 40),
           child: Text(
             "Chithrangadhakp",
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 20),
+        const Padding(
+          padding: EdgeInsets.only(top: 20),
           child: Text(
             "journalist/model",
             style: TextStyle(

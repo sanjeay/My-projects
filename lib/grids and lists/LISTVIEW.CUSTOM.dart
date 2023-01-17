@@ -15,6 +15,7 @@ class custom extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(),
         body: ListView.custom(
+
           itemExtent: 100,
           childrenDelegate: SliverChildBuilderDelegate(childCount: name.length,
               (BuildContext, index) {
